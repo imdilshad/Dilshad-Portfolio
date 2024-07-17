@@ -6,7 +6,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: #111;
   color: #fff;
   overflow-x: hidden;
@@ -53,12 +53,18 @@ body{
   gap:10px;
   text-align: start;
   font-size: 1.8em;
+  position: relative;
+}
+.text span{
+width: 100%;
+overflow:hidden;
 }
 .section{
   font-size: 3.5em;
   display: flex;
   white-space: nowrap;
   padding: 10px 0 20px 0;
+  overflow: hidden;
 }
 /* secction 2 */
 .container-2{
@@ -307,16 +313,21 @@ body{
     align-items: center;
     margin: 0px 10px;
     width: 100%;
-    position: relative;
+    
   }
   .hero img{
     height: 200px;
     width: 300px;
   }
   .text{
-    width: 50%;
+    width: 100%;
     flex-wrap: wrap;
-    position: relative;
+    padding: 10px 20px;
+  }
+  .text span{
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: clip;
   }
   .section{
     font-size: 1em;
@@ -336,5 +347,62 @@ body{
   .logos{
     flex-wrap: wrap;
   }
+  .container-2{
+    margin: 0px 10px;
+    padding: 0 10px;
+  }
+  .skills h1{
+    font-size: 2.4em;
+  }
+  .skills h5{
+    font-size: 1.3em;
+  }
+  .development button{
+    font-size: 1.3em;
+  }
+  .logos span img{
+    height: 20px;
+  }
+  .design button{
+    font-size: 1.3em;
+  }
+  .container-3 h1{
+    font-size: 2.4em;
+  }
+  .container-3 h5{
+    font-size: 1.4em;
+  }
+  .col-6 a{
+    font-size: 2em;
+  }
+.col-6 h5{
+  font-size: 1.1em;
+}
+.col-6{
+  text-align: center;
+}
+.see-more{
+  padding: 10px 0px;
+}
+.see-more button{
+  font-size: small;
+}
+.see-more span{
+  font-size: medium;
+}
+.container-4{
+  padding: 0% 10px;
+  margin: 0px 10px;
+}
+.container-5{
+  padding: 0% 10px;
+  margin: 20px 10px;
+}
+.container-4 h1{
+  font-size: 1.9em;
+}
+.container-5 h1{
+  font-size: 1.9em;
+}
   
 }
