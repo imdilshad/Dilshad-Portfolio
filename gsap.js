@@ -54,7 +54,7 @@ gsap.from('.col-6 ',{
 })
 
 gsap.to('.section h1',{
-  transform:'translateX(-100%)',
+  transform:"translateX(calc(-100% - 2vw - 4px))",
   scrollTrigger:{
     trigger:'.section ',
     scroller:'body',
